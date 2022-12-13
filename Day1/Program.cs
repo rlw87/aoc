@@ -5,6 +5,7 @@
                     .Select(x => int.Parse(x))
                     .Sum())
                 .OrderDescending()
-                .Take(3);
+                .Take(3)
+                .Sum();
 
-Console.WriteLine(string.Join(Environment.NewLine, output));
+Console.WriteLine(output);
